@@ -57,3 +57,41 @@ function App (){
         </>
     );
 }
+
+// Props with objects
+
+function Mys(props){
+   return (
+   <>
+        <p>Following are the names of the fruits: </p>
+        <br />
+        <ul>
+            <li>{props.name.name}</li>
+            <li>{props.name.age}</li>
+            <li>{props.name.university}</li>
+            <li>{props.name.home}</li>
+        </ul>
+        
+        
+    </>
+   );
+}
+
+export default Fruits;
+
+// and when it is called it is like
+
+import Fruits from ".File name ";
+
+function App (){
+    return(
+        <>
+            <Greeting name = {{
+                name : "Afaq ahmed",
+                age : 21,
+                university : "Hitect",
+                home : "Wah cantt"
+            }}/>
+        </>
+    );
+}
